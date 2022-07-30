@@ -1,0 +1,635 @@
+* {
+  padding: 0;
+  margin: 0;
+  
+letter-spacing: 2px;
+}
+.head{
+  width: 100%;
+  height: 100vh;
+  background-image: url("images/img22.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.dropD{
+  height: 10vh;
+  display:inline-flex;
+justify-content: space-around;
+align-items: center;
+width:40%;
+}
+.shareTask{
+  float:right;
+  margin-top: 10px;
+ margin-right: 20px;
+ position: relative;
+}
+.shareTask button{
+  width: 60px;
+  height: 50px;
+  border: none;
+  background-color: rgb(45, 51, 51) ;
+  color: #f0f0f0;
+ cursor: pointer;
+  
+}
+.shareTask button:hover{
+ 
+  background-color:#bfbfbf ;
+  color:  rgb(45, 51, 51) ;
+}
+.shareTask  ion-icon{
+  font-size: 25px;
+}
+.shareTask ul{
+  
+  background-color: white;
+  width: 60px;
+  height: 180px;
+text-align: center;
+display: flex;
+justify-content: space-around;
+align-items: center;
+flex-direction: column;
+list-style-type: none;
+pointer-events: none;
+transform: translateY(0px);
+transition: all 0.6s ease;}
+
+.shareTask ul li:hover{
+  background-color: #999;
+  
+}
+.shareTask ul li a{
+  text-decoration: none;
+font-size: 20px;
+color: white;
+}
+
+
+.about{
+  position: relative;
+}
+.about i{
+  padding-left: 10px;
+  color:rgb(24, 36, 36) ;
+  transition: 0.4s ease;
+}
+.about ul{
+position: absolute;
+margin-top: 24px;
+margin-left: -20px;
+background-color: white;
+width: 150px;
+height: 150px;
+display: flex;
+justify-content: space-around;
+align-items: center;
+flex-direction: column;
+list-style-type: none;
+pointer-events: none;
+transform: translateY(-10px);
+transition: all 0.4s ease;
+}
+.about a{
+  color:darkslategrey ;
+  text-decoration: none;
+}
+.about li , .shareTask ul li{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+align-items: center;
+cursor: pointer;
+text-align: center;
+}
+.about li:hover , .shareTask ul li:hover{
+  background-color: rgb(221 225 234);
+
+  
+}
+.dropD button,.men{
+background: none;
+border: none;
+color:rgb(24, 36, 36) ;
+text-decoration: none;
+font-size: 15px;
+cursor: pointer;
+}
+.dropD button:hover , .men:hover {
+  color: rgb(168, 165, 165);
+}
+
+.GridTask {
+  margin: 60px auto;
+  text-align: center;
+  width: 100%;
+}
+
+.GridTask h2 {
+  padding: 10px 0;
+}
+
+.GridTask i {
+  padding: 10px 0;
+  cursor: pointer;
+  color: grey;
+  font-size: 20px;
+}
+
+.GridTask i:hover {
+  color: black;
+  transition: 0.4s;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#column1 ,#column2,#column3,#column4{
+  width: 25%;
+  transition: 0.4s;
+}
+
+#column1 img,#column2 img,#column3 img,#column4 img{
+  width: 98%;
+  padding: 1%;
+}
+
+.line {
+  width: 70%;
+  margin: 90px auto;
+  height: 1px;
+  background-color: grey;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+
+.to_top{
+  border-radius: 50%;
+  background: linear-gradient(rgb(46, 46, 46)20%, grey 80%);
+  font-size:20px;
+  color: white;
+  text-decoration: none;
+  width:50px;
+height: 50px;
+right: 32px;
+bottom: 16px;
+position: fixed;
+display: flex;
+align-items: center;
+justify-content: center;
+opacity: 0;
+pointer-events: none;
+transition: all .4s;
+z-index:3;
+}
+
+.to_top.active{
+  opacity: 1;
+  pointer-events: auto;
+  bottom: 50%;
+
+}
+.icon-bar{
+  margin-top:20px ;
+}
+.icon-bar a {
+  display: inline;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.facebook {
+  background: #3B5998;
+
+}
+
+.twitter {
+  background: #55ACEE;
+
+}
+
+.google {
+  background: #dd4b39;
+
+}
+
+.linkedin {
+  background: #007bb5;
+
+}
+
+.Foot{
+  margin-top: 100px;
+  background:linear-gradient(   rgb(80, 81, 81),rgb(24, 36, 36) );
+  color: antiquewhite;
+
+}
+.copyR{
+  width: 100%;
+  background:rgb(24, 36, 36)  ;
+  text-align: center;
+  color: antiquewhite;
+  height:30px;
+}
+.logo img{
+  width: 90px;
+  height: 90px;
+  cursor: pointer;
+}
+
+
+.logo , .contact , .follow{
+  float: left;
+  width: 40%;
+  padding: 20px;
+}
+.contact , .follow{
+  width: 25%;
+  margin-top: 40px;
+  justify-content: center;
+ 
+}
+
+.logo img , .contact h4 , .contact p, .follow h4, .logo p{
+  padding-bottom: 20px;
+}
+.logo a{
+  color: antiquewhite;
+}
+.contact i{
+  margin-right:10px;
+}
+.follow {
+  
+  align-items: center;
+  text-align: center;
+}
+
+
+.Foot:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+@media screen and (max-width:1000px) {
+  .logo , .contact , .follow{
+    width: 100%;
+  }
+}
+
+/* TASK5 - LIST GRID VIEWS*/
+
+
+.listGridButtons{
+padding: 10px;
+margin: 10px;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+.listGridButtons button{
+  border: none;
+  width: 90px;
+  height: 60px;
+  color: rgb(57, 57, 57);
+  cursor: pointer;
+  background-color: #b1afaf;
+
+ }
+ .listGridButtons button:hover{
+  color: black;
+ }
+
+/* TASK5 - OUR TEAM */
+.OURTeam-title{
+  font-size: 40px;
+  margin-top: 20px;
+  color: #222;
+
+  text-align: center;
+}
+.container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+.box{
+  height: 590px;
+  width: 330px;
+  margin: 20px;
+  box-shadow:2px 2px 5px #000 ;
+  background-color: rgb(178 116 255);
+  border-radius: 10px;
+  position: relative;
+}
+.card{
+  position: absolute;
+  height: 550px;
+  width: 290px;
+  margin-left: 20px;
+  margin-top: 20px;
+  box-shadow:2px 3px 5px #000 ;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  background-color:#222 ;
+  transition: .4s ease;
+  cursor: pointer;
+}
+.card:hover{
+transform: translateY(-50px);
+}
+.card .bg-img img{
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  clip-path: polygon(0 0 , 100% 0% , 100% 65% , 50% 100% , 0 70%);
+}
+.card .pic img{
+height: 120px;
+width: 120px;
+border-radius: 50%;
+border: 8px solid #222;
+margin-top: -90px;
+position: relative;
+}
+.card .info h3{
+  color: #f0f0f0;
+  font-size:20px ;
+  padding: 10px 0;
+}
+.card .info span{
+  font-size: 15px;
+  color: rgb(200 127 206);
+}
+.card .info p{
+  font-size:13px ;
+  padding:10px 20px ;
+  color: #999;
+}
+
+.card .info .icons a{
+font-size: 20px;
+text-decoration: none;
+color: rgb(200 127 206);
+margin-top: 20px;
+padding:0 5px;
+}
+.card .info .icons a:hover{
+  color: #f0f0f0;
+}
+/*END TASK5*/
+.products {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+
+}
+
+.products .container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 1200px;
+  transform-style: preserve-3d;
+  
+}
+
+.container .Pbox {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  margin: 40px;
+  background: #232323;
+  border-radius: 20px;
+  transform-style: preserve-3d;
+  margin: 25px auto;
+  transition: 0.5s;
+  
+}
+
+.container .Pbox::before {
+  content: 'Nature';
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 6em;
+  font-weight: 900;
+  color: #fff;
+  font-style: italic;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.container .Pbox::after {
+  content: 'photos';
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  font-size: 5em;
+  font-weight: 900;
+  color: #fff;
+  font-style: italic;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.container .Pbox:hover::before,
+.container .Pbox:hover::after {
+  opacity: 0.04;
+}
+
+.container .Pbox .name {
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  color: #fff;
+  width: 100%;
+  transform-style: preserve-3d;
+  transform: translate3d(0,0,75px);
+  transition: 0.5s;
+  opacity: 0;
+  z-index: 10;
+}
+
+.container .Pbox:hover .name
+{
+  top: 40px;
+  opacity: 1;
+}
+
+.container .Pbox .more
+{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform-style: preserve-3d;
+  transform:translate3d(-50%,0,75px);
+  color: #fff;
+  background: #333;
+  padding: 10px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: 0.5s;
+  opacity: 0;
+  z-index: 10;
+}
+
+.container .Pbox:hover .more
+{
+  bottom: 30px;
+  opacity: 1;
+}
+
+.container .Pbox .circle
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 200px;
+  transition: 0.5s;
+  background: #fff;
+  transform-style: preserve-3d;
+  z-index: 10;
+  opacity: 1;
+  transform: translate3d(-50%,-50%,50px);
+}
+
+.container .Pbox .product
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 180px; 
+  max-width: 300px;
+  z-index: 11;
+  transition: 0.5s;
+  transform-style: preserve-3d;
+  transform: translate3d(-50%,-50%,50px) rotate(0deg);
+}
+
+.container .Pbox:hover .product
+{
+  transform: translate3d(-50%,-50%,100px) rotate(16deg);
+}
+
+.container .Pbox .circle,
+.container .Pbox .more
+{
+  background: #727271;
+}
+
+/* TASK5 - To_do_list*/
+
+.To_do_list{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.list{
+  position: relative;
+  background:#fff ;
+width: 350px;  
+border-radius: 20px;
+border: 1px solid #ccc;
+}
+
+.list h2{
+  background:linear-gradient( #131f37 , #3d3d3d);
+  color: #fff;
+  padding: 10px 20px;
+  font-weight: 600;
+  text-align: center;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.list ul{
+  position: relative;
+  padding:20px;
+}
+.list ul li{
+  position: relative;
+  list-style-type: none;
+  padding: 15px 0;
+  border-bottom: 1px solid rgb(0 , 0 , 0 , 0.1);
+}
+.list ul li:last-child{
+border-bottom: none;
+}
+.list ul li label{
+position: relative;
+display: flex;
+justify-content:space-between;
+align-items: center;
+cursor: pointer;
+}
+
+.list ul li label input{
+visibility: hidden;
+appearance: none;
+}
+
+.list ul li label p{
+  position: absolute;
+}
+
+.list ul li label span{
+position: relative;
+width: 20px;
+height: 20px;
+border: 1px solid #ccc;
+border-radius: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.list ul li label span:before{
+content: "";
+position: absolute;
+top: 5px;
+width: 10px;
+height: 5px;
+border-left: 2px solid #ccc;
+border-bottom: 2px solid #ccc;
+transform: rotate(-40deg);
+}
+
+.list ul li label input:checked ~ p{
+  text-decoration: line-through;
+  color:#ccc;
+}
+
+.list ul li label input:checked ~ span{
+  background:linear-gradient( #3B5998 , #3d3d3d);
+  border: 1px solid #3B5998;
+}
+
+.list ul li label input:checked ~ span::before{
+  
+border-left: 2px solid #fff;
+border-bottom: 2px solid #fff;
+}
